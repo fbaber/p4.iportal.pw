@@ -7,13 +7,13 @@
 class practice_controller extends base_controller{
 
 	public function test1(){
+		/*
 		echo "You are looking at test one"."<br>";
-		
 		echo APP_PATH."<br>";
 		echo DOC_ROOT."<br>";
 		
 		require(APP_PATH.'/libraries/Image.php');
-		
+		*/
 		
 		
 		/*
@@ -38,6 +38,29 @@ class practice_controller extends base_controller{
 	
 		echo Time::now();
 	}
+	
+	public function db_test(){
+	
+		# Our SQL command
+		$q = "INSERT INTO users SET 
+			first_name = 'Furrukh', 
+			last_name = 'Baber',
+			email = 'furrukh.baber@gmail.com'";
+
+		# Run the command
+		echo DB::instance(DB_NAME)->query($q);
+		
+		# Our SQL update command
+		$q = "UPDATE users
+			SET email = 'samseaborn@whitehouse.gov'
+			WHERE email = 'seaborn@whitehouse.gov'";
+
+		# Run the command
+		echo DB::instance(DB_NAME)->query($q);
+	
+	
+	}
+	
 
 }
 
