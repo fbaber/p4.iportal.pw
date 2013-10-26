@@ -11,7 +11,8 @@ class users_controller extends base_controller {
     }
 
     public function signup() {
-        echo "This is the signup page";
+        
+		# echo "This is the signup page";
 		
 		# Setup view
             $this->template->content = View::instance('v_users_signup');
@@ -43,7 +44,15 @@ class users_controller extends base_controller {
 
 		# For now, just confirm they've signed up - 
 		# You should eventually make a proper View for this
-		echo 'You are signed up';
+		# echo 'You are signed up';
+		
+		# Added this code 10-24-13 to display a page when user have singed up for the app 
+		# Setup view
+            $this->template->content = View::instance('v_users_signed_up');
+            $this->template->title   = "Sign Up Success";
+
+        # Render template
+            echo $this->template;
 		
     }
 	
