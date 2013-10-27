@@ -174,7 +174,7 @@ class users_controller extends base_controller {
 		# Create an array of 1 or many client files to be included in the head
 		$client_files_head = Array(
 			'/css/widgets.css',
-			'/css/profile.css'
+			'css/profile.css'
 			);
 
 		# Use load_client_files to generate the links from the above array
