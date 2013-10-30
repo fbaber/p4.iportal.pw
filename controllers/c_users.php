@@ -3,7 +3,7 @@ class users_controller extends base_controller {
 
     public function __construct() {
         parent::__construct();
-        echo "users_controller construct called<br><br>";
+        # echo "users_controller construct called<br><br>";
     } 
 
     public function index() {
@@ -141,13 +141,10 @@ class users_controller extends base_controller {
 
     public function profile() {
 	
-	#####  public function profile($user_name = NULL) {
-	#####	Added code 10/23
-		
 		# If user is blank, they're not logged in; redirect them to the login page
-    if(!$this->user) {
+		if(!$this->user) {
         Router::redirect('/users/login');
-    }
+		}
 
     # If they weren't redirected away, continue:
 
@@ -155,26 +152,11 @@ class users_controller extends base_controller {
     $this->template->content = View::instance('v_users_profile');
     $this->template->title   = "Profile of".$this->user->first_name;
 
-    # Render template
-    echo $this->template;
-	
-	####
-		/*
-		If you look at _v_template you'll see it prints a $content variable in the <body>
-		Knowing that, let's pass our v_users_profile.php view fragment to $content so 
-		it's printed in the <body>
-		*/
-	//	$this->template->content = View::instance('v_users_profile');
-
-		#$title is another variable used in _v_template to set the <title> of the page
-	//	$this->template->title = "Profile";
-		
-		# ****************************** #
-		
+   
 		# Create an array of 1 or many client files to be included in the head
 		$client_files_head = Array(
 			'/css/widgets.css',
-			'css/profile.css'
+			'/css/profile.css'
 			);
 
 		# Use load_client_files to generate the links from the above array
@@ -188,35 +170,9 @@ class users_controller extends base_controller {
 
 		# Use load_client_files to generate the links from the above array
 		$this->template->client_files_body = Utils::load_client_files($client_files_body);  
-
-		# ****************************** #
 		
-		# Pass information to the view fragment
-		//$this->template->content->user_name = $user_name;
-
-		# Render View
-		//echo $this->template;
-		
-		
-		
-		# Create a new View instance
-		# Do *not* include .php with the view name
-		#$view = View::instance('v_users_profile');
-
-		# Pass information to the view instance
-		#$view->user_name = $user_name;
-
-		# Render View
-		#echo $view;
-	
-		
-		/*
-        if($user_name == NULL) {
-            echo "No user specified";
-        }
-        else {
-            echo "This is the profile for ".$user_name;
-        } */
+		 # Render template
+		echo $this->template;
     }
 
 } # end of the class
