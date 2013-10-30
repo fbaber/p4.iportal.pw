@@ -120,7 +120,7 @@ class users_controller extends base_controller {
 	
 	
     public function logout() {
-        echo "This is the logout page";
+        # echo "This is the logout page";
 		
 		# Generate and save a new token for next login
 		$new_token = sha1(TOKEN_SALT.$this->user->email.Utils::generate_random_string());
