@@ -48,10 +48,44 @@ class users_controller extends base_controller {
 		
 		# Added this code 10-24-13 to display a page when user have singed up for the app 
 		# Setup view
+        #    $this->template->content = View::instance('v_users_signed_up');
+        #    $this->template->title   = "Sign Up Success";
+
+			
+		## Test email 
+		
+		# Build a multi-dimension array of recipients of this email
+		$to[] = Array("name" => $_POST['first_name'], "email" => $_POST['email']);
+				
+		# Build a single-dimension array of who this email is coming from
+		# note it's using the constants we set in the configuration above)
+		$from = Array("name" => APP_NAME, "email" => APP_EMAIL);
+
+		# Subject
+		$subject = "Welcome to Flabber";
+
+		# You can set the body as just a string of text
+		$body = "Welcome to Flabber! We hope you find time to blabb each and every day. Be sure to visit Flabber often by visiting http://p2.iportal.pw
+		";
+
+		# OR, if your email is complex and involves HTML/CSS, you can build the body via a View just like we do in our controllers
+		# $body = View::instance('e_users_welcome');
+
+		# Build multi-dimension arrays of name / email pairs for cc / bcc if you want to 
+		$cc  = "";
+		$bcc = "";
+
+		# With everything set, send the email
+		$email = Email::send($to, $from, $subject, $body, true, $cc, $bcc);
+		
+		## Test email 
+		 
+		 # Added this code 10-24-13 to display a page when user have singed up for the app 
+		# Setup view
             $this->template->content = View::instance('v_users_signed_up');
             $this->template->title   = "Sign Up Success";
-
-        # Render template
+			
+		# Render template
             echo $this->template;
 		
     }

@@ -1,0 +1,9 @@
+2013-10-30 21:16:52 - INFO --> -------------------------- 
+2013-10-30 21:16:52 - INFO --> Controller/Method: users/p_signup 
+2013-10-30 21:16:52 - INFO --> OUTGOING EMAILS ARE DISABLED. THIS EMAIL WAS NOT SENT TO THE RECIPIENTS, ONLY norman.gruman@gmail.com 
+2013-10-30 21:16:52 - INFO --> From: Flabber (norman.gruman@gmail.com) 
+2013-10-30 21:16:52 - INFO --> To: Furrukh Baber (furrukh.baber@gmail.com),  
+2013-10-30 21:16:52 - INFO --> CC:  
+2013-10-30 21:16:52 - INFO --> BCC:  
+2013-10-30 21:16:52 - INFO --> Subject: Welcome to JavaBeans 
+2013-10-30 21:16:52 - INFO --> Body: Hi Judy, this is just a message to confirm your registration at JavaBeans.com 

@@ -14,11 +14,12 @@ If you want a different default time format for this app, set it below
 */
 
 # What is the name of this app?
-	define('APP_NAME', 'FB-Blog');  
+	define('APP_NAME', 'Flabber');  
 
 # When email is sent out from the server, where should it come from?
 # Ideally, this should match the domain name
-	define('APP_EMAIL', 'furrukh.baber@gmail.com'); 
+	//define('APP_EMAIL', 'admin@iportal.pw'); 
+	define('APP_EMAIL', 'admin@iportal.pw'); 
 
 /* 
 A email designated to receive messages from the server. Examples:
@@ -28,7 +29,7 @@ A email designated to receive messages from the server. Examples:
  	
  	Some might want this to be the same as the APP_EMAIL, others might want to create a designated gmail address for it
 */ 	
-	define('SYSTEM_EMAIL', 'furrukh.baber@gmail.com'); 
+	define('SYSTEM_EMAIL', 'admin@iportal.pw'); 
 
 # Default DB name for this app
 	define('DB_NAME', "iportalp_p2_iportal_pw"); 
@@ -38,9 +39,9 @@ A email designated to receive messages from the server. Examples:
 
 # If your app is going to have outgoing emails, you should fill in your SMTP settings
 # For this you could use gmail SMTP or something like http://sendgrid.com/
-	//define('SMTP_HOST', '');
-	//define('SMTP_USERNAME', '');
-	//define('SMTP_PASSWORD', '');
+	define('SMTP_HOST', 'mail.iportal.pw');
+	define('SMTP_USERNAME', 'admin@iportal.pw');
+	define('SMTP_PASSWORD', 'B9175726618*');
 
 # For extra security, you might want to set different salts than what the core uses
 	define('PASSWORD_SALT', 'OQ94UyV!(^5C57eA8pIcsJdoSK6M1_*v$LGGtrn^');
