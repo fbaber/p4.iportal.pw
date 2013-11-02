@@ -77,3 +77,13 @@
 2013-10-31 11:01:35 - INFO --> Subject: Welcome to Flabber 
 2013-10-31 11:01:35 - INFO --> Body: Welcome to Flabber! We hope you find time to blabb each and every day. Be sure to visit Flabber often by visiting http://p2.iportal.pw
 		 
+2013-10-31 12:18:18 - INFO --> -------------------------- 
+2013-10-31 12:18:18 - INFO --> Controller/Method: users/p_signup 
+2013-10-31 12:18:18 - INFO --> OUTGOING EMAILS ARE DISABLED. THIS EMAIL WAS NOT SENT TO THE RECIPIENTS, ONLY admin@iportal.pw 
+2013-10-31 12:18:18 - INFO --> From: Flabber (admin@iportal.pw) 
+2013-10-31 12:18:18 - INFO --> To: sim (phptester1@yahoo.com),  
+2013-10-31 12:18:18 - INFO --> CC:  
+2013-10-31 12:18:18 - INFO --> BCC:  
+2013-10-31 12:18:18 - INFO --> Subject: Welcome to Flabber 
+2013-10-31 12:18:18 - INFO --> Body: Welcome to Flabber! We hope you find time to flabb each and every day. Be sure to visit Flabber often by visiting http://p2.iportal.pw
+		 

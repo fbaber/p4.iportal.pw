@@ -65,7 +65,7 @@ class users_controller extends base_controller {
 		$subject = "Welcome to Flabber";
 
 		# You can set the body as just a string of text
-		$body = "Welcome to Flabber! We hope you find time to blabb each and every day. Be sure to visit Flabber often by visiting http://p2.iportal.pw
+		$body = "Welcome to Flabber! We hope you find time to flabb each and every day. Be sure to visit Flabber often by visiting http://p2.iportal.pw
 		";
 
 		# OR, if your email is complex and involves HTML/CSS, you can build the body via a View just like we do in our controllers
@@ -201,6 +201,25 @@ class users_controller extends base_controller {
 		# Use load_client_files to generate the links from the above array
 		$this->template->client_files_body = Utils::load_client_files($client_files_body);  
 		
+		# ********* for Editing Post function 
+		
+		# Build the query
+            $q = 'SELECT
+            posts.user_id,
+			posts.content,
+            posts.created,
+            posts.post_id
+                FROM posts
+        WHERE posts.user_id = '.$this->user->user_id.' 
+            ORDER BY posts.created DESC' ;
+
+            # Run the query
+            $posts = DB::instance(DB_NAME)->select_rows($q);
+
+            # Pass data to the View
+            $this->template->content->posts = $posts;    
+		
+		# **************
 		 # Render template
 		echo $this->template;
     }

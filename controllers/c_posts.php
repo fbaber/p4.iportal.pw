@@ -49,6 +49,7 @@ class posts_controller extends base_controller {
     $q = 'SELECT 
             posts.content,
             posts.created,
+			posts.post_id,
             posts.user_id AS post_user_id,
             users_users.user_id AS follower_id,
             users.first_name,
@@ -137,4 +138,57 @@ class posts_controller extends base_controller {
     Router::redirect("/posts/users");
 
 	}
+	
+	# Add functionality to edit posts 2ns +1 feature
+	
+	public function edit($edited) {
+            # Set up the View
+            $this->template->content = View::instance('v_posts_edit');
+                    
+            # Build the query to get the post
+            $q = "SELECT *
+         FROM posts
+         WHERE user_id = ".$this->user->user_id. " AND
+         post_id = ".$edited;
+
+            # Execute the query to get all the users.
+            # Store the result array in the variable $post
+            $_POST['editable'] = DB::instance(DB_NAME)->select_row($q);
+            
+            # Pass data to the view
+            $this->template->content->post = $_POST['editable'];
+            
+			# print_r($_POST);
+            # Render template
+                echo $this->template;         
+
+    }
+    
+    public function p_edit($id) {
+			
+			
+			#print_r($id);
+			#die();
+            # Prevent SQL injection attacks by sanitizing the data the user entered in the form
+                $_POST = DB::instance(DB_NAME)->sanitize($_POST);
+    
+            # Set up the View
+            # Delete 
+			#$this->template->content = View::instance('v2_posts_2_edit');
+                  
+                  # Set the modified time
+            $_POST['modified'] = Time::now();
+            
+            # Be sure to Associate this post with this user
+        $_POST['user_id'] = $this->user->user_id;
+         
+                # set up the where conditon and update the post.
+                $where_condition = 'WHERE post_id = '.$id;
+                $updated_post = DB::instance(DB_NAME)->update('posts', $_POST, $where_condition);
+
+                # Send them back
+               Router::redirect('/users/profile');
+    }
+	
+	# +1 functionality end 
 }
