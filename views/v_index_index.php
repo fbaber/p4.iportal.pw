@@ -1,4 +1,5 @@
 <?php if($user) router::redirect('/posts');;?>
+<div id="content">
 <div class="row">
 <div class="col-md-10 col-md-offset-1">
 <h1 class="page-header">Welcome to <?=APP_NAME?><?php if($user) echo ', '.$user->first_name; ?></h1>
@@ -19,11 +20,13 @@
 <br><br><br>
 
 <div class="panel panel-default">
-	<div class="panel-body">
-                        <h4>Flabber +1 Features:</h4>
+	<div class="panel-body" style="left:7%; position:relative;">
+                        
                         <ul>
+							<li><h4>Flabber +1 Features:</h4></li>
                             <li>Sign up confirmation to the new user.</li>
                             <li>Editing your posts</li>
                         </ul>
 	</div>
+</div> 
 </div>

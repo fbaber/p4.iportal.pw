@@ -1,0 +1,44 @@
+2013-11-04 10:57:23 - INFO --> -------------------------- 
+2013-11-04 10:57:23 - INFO --> Controller/Method: users/p_signup 
+2013-11-04 10:57:23 - INFO --> OUTGOING EMAILS ARE DISABLED. THIS EMAIL WAS NOT SENT TO THE RECIPIENTS, ONLY admin@iportal.pw 
+2013-11-04 10:57:23 - INFO --> From: Flabber (admin@iportal.pw) 
+2013-11-04 10:57:23 - INFO --> To: 99 (furrukhbaber@hotmail.com),  
+2013-11-04 10:57:23 - INFO --> CC:  
+2013-11-04 10:57:23 - INFO --> BCC:  
+2013-11-04 10:57:23 - INFO --> Subject: Welcome to Flabber 
+2013-11-04 10:57:23 - INFO --> Body: Welcome to Flabber! We hope you find time to flabb each and every day. Be sure to visit Flabber often by visiting http://p2.iportal.pw
+		 
+2013-11-04 10:57:34 - INFO --> FAILED TO SEND EMAIL 
+2013-11-04 18:49:18 - INFO --> -------------------------- 
+2013-11-04 18:49:18 - INFO --> Controller/Method: users/p_signup 
+2013-11-04 18:49:18 - INFO --> OUTGOING EMAILS ARE DISABLED. THIS EMAIL WAS NOT SENT TO THE RECIPIENTS, ONLY admin@iportal.pw 
+2013-11-04 18:49:18 - INFO --> From: Flabber (admin@iportal.pw) 
+2013-11-04 18:49:18 - INFO --> To: Furrukh (furrukh.baber@adeccona.com),  
+2013-11-04 18:49:18 - INFO --> CC:  
+2013-11-04 18:49:18 - INFO --> BCC:  
+2013-11-04 18:49:18 - INFO --> Subject: Welcome to Flabber 
+2013-11-04 18:49:18 - INFO --> Body: Welcome to Flabber! We hope you find time to flabb each and every day. Be sure to visit Flabber often by visiting http://p2.iportal.pw
+		 
+2013-11-04 18:49:29 - INFO --> FAILED TO SEND EMAIL 
+2013-11-04 18:51:41 - INFO --> -------------------------- 
+2013-11-04 18:51:41 - INFO --> Controller/Method: users/p_signup 
+2013-11-04 18:51:41 - INFO --> OUTGOING EMAILS ARE DISABLED. THIS EMAIL WAS NOT SENT TO THE RECIPIENTS, ONLY admin@iportal.pw 
+2013-11-04 18:51:41 - INFO --> From: Flabber (admin@iportal.pw) 
+2013-11-04 18:51:41 - INFO --> To: test7 (furrukh.baber@adeccona.com),  
+2013-11-04 18:51:41 - INFO --> CC:  
+2013-11-04 18:51:41 - INFO --> BCC:  
+2013-11-04 18:51:41 - INFO --> Subject: Welcome to Flabber 
+2013-11-04 18:51:41 - INFO --> Body: Welcome to Flabber! We hope you find time to flabb each and every day. Be sure to visit Flabber often by visiting http://p2.iportal.pw
+		 
+2013-11-04 18:51:51 - INFO --> FAILED TO SEND EMAIL 
+2013-11-04 18:57:56 - INFO --> -------------------------- 
+2013-11-04 18:57:56 - INFO --> Controller/Method: users/p_signup 
+2013-11-04 18:57:56 - INFO --> OUTGOING EMAILS ARE DISABLED. THIS EMAIL WAS NOT SENT TO THE RECIPIENTS, ONLY admin@iportal.pw 
+2013-11-04 18:57:56 - INFO --> From: Flabber (admin@iportal.pw) 
+2013-11-04 18:57:56 - INFO --> To: ter (furrukhbaber@hotmail.com),  
+2013-11-04 18:57:56 - INFO --> CC:  
+2013-11-04 18:57:56 - INFO --> BCC:  
+2013-11-04 18:57:56 - INFO --> Subject: Welcome to Flabber 
+2013-11-04 18:57:56 - INFO --> Body: Welcome to Flabber! We hope you find time to flabb each and every day. Be sure to visit Flabber often by visiting http://p2.iportal.pw
+		 
+2013-11-04 18:58:06 - INFO --> FAILED TO SEND EMAIL 

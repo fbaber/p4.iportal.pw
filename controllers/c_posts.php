@@ -170,7 +170,7 @@ class posts_controller extends base_controller {
 			#print_r($id);
 			#die();
             # Prevent SQL injection attacks by sanitizing the data the user entered in the form
-                $_POST = DB::instance(DB_NAME)->sanitize($_POST);
+            #    $_POST = DB::instance(DB_NAME)->sanitize($_POST);
     
             # Set up the View
             # Delete 

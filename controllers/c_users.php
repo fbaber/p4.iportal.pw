@@ -17,14 +17,38 @@ class users_controller extends base_controller {
 		# Setup view
             $this->template->content = View::instance('v_users_signup');
             $this->template->title   = "Sign Up";
-
+		
         # Render template
             echo $this->template;
     }
 
 	public function p_signup() {
 
-        # Dump out the results of POST to see what the form submitted
+        
+		# setup the view
+                #------------------------------------------------------------------
+                $this->template->content = View::instance('v_users_signup');
+                $this->template->title = "Signed-up";
+				
+				 # set error var to false
+        $error = false;
+		
+		# initiate error
+        $this->template->content->error = '<br>';
+		
+		
+		// check whether this user's email already exists (sanitize input first)
+        $_POST = DB::instance(DB_NAME)->sanitize($_POST);
+        $exists = DB::instance(DB_NAME)->select_field("SELECT email FROM users WHERE email = '" . $_POST['email'] . "'");
+		
+		
+		if (isset($exists)) {
+            $error = true;
+            $this->template->content->error = 'Another account has already been created with this email address.';
+            echo $this->template;          
+            }
+        	
+		# Dump out the results of POST to see what the form submitted
         #echo '<pre>';
         #print_r($_POST);
         #echo '</pre>';   
@@ -91,9 +115,14 @@ class users_controller extends base_controller {
     }
 	
     public function login($error = NULL) {
-        echo "This is the login page:<br>";
-		echo "<br>";
-				
+        # echo "This is the login page:<br>";
+		# echo "<br>";
+		
+		# If user is logged in, redirect them to the profile page
+		if($this->user) {
+        Router::redirect('/users/profile');
+		}
+		
 		# Setup view
         $this->template->content = View::instance('v_users_login');
         $this->template->title   = "Login";
@@ -185,8 +214,8 @@ class users_controller extends base_controller {
    
 		# Create an array of 1 or many client files to be included in the head
 		$client_files_head = Array(
-			'/css/widgets.css',
-			'/css/profile.css'
+			'/css/bootstrap.min.css',
+			'/css/bootstrap-theme.min.css'
 			);
 
 		# Use load_client_files to generate the links from the above array
@@ -194,7 +223,7 @@ class users_controller extends base_controller {
 
 		# Create an array of 1 or many client files to be included before the closing </body> tag
 		$client_files_body = Array(
-			'/js/widgets.min.js',
+			'/js/bootstrap.min.js',
 			'/js/profile.min.js'
 			);
 

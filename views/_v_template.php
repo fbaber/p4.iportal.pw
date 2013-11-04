@@ -22,12 +22,16 @@
 	<!-- Controller Specific JS/CSS -->
 	<?php if(isset($client_files_head)) echo $client_files_head; ?>
 	
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+
 </head>
 
 <body>	
 	
-	<div id='menu'>
-		<center>
+	<div id="header">
+	<div id='menu' style="background-color:#FFD700; text-align:center;height:60px;width:1200px;float:center; font-family:Georgia Bold; font-size: 18px;position:fixed">
 			<a href='/'>Home</a>
 
 			<!-- Menu for users who are logged in -->
@@ -37,8 +41,7 @@
 				<a href='/users/profile'>Profile</a>
 				<a href='/posts/add'>Flabb</a>
 				<a href='/posts/users'>Flabbers</a>
-				<a href='/users/profile'>Profile</a>
-
+				
 			<!-- Menu options for users who are not logged in -->
 			<?php else: ?>
 
@@ -46,8 +49,8 @@
 				<a href='/users/login'>Log in</a>
 
 			<?php endif; ?>
-		</center>
     </div>
+	</div>
 
     <br>
 
@@ -55,19 +58,16 @@
 
 	<?php if(isset($client_files_body)) echo $client_files_body; ?>
 	<hr/>
-	<div id="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <p class="right pull-right">Flabber<br>Project 2<br>
-                        Furrukh Baber<br>
-                        <a href="mailto:furrukh.baber@gmail.com">Furrukh.baber@gmail.com</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-    </div> <!-- footer -->
-	
+<!-- <div class="footer" style="background-color:#FFA500;clear:both;text-align:center;width:1500px;position:absolute;op: 50px;
+		right: 50px;">
+Copyright © Flabber</div>
+-->
+
+<div class="footer" style="background-color:#FFA500;clear:both;text-align:center;width:1500px;position:fixed;op: 50px;
+		right: 50px; bottom:0px;">
+Copyright © Flabber</div>
+	<!-- footer -->
+
 	 <script src="/js/bootstrap.min.js"></script>
 </body>
 </html>

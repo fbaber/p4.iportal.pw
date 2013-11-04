@@ -2,10 +2,7 @@
 
 <i>Edit your post:</i>
         <br>
-        <textarea id='myPost' cols="50" rows="10" type='text' name='content' required>
-                <?=$post['content']?>
-				
-        </textarea>
+        <textarea id='myPost' cols="50" rows="10" type='text' name='content' required><?=nl2br($post['content'])?></textarea>
 		<br>
     <input class="buttons" type='submit' value='Update Post'>
 </form>
