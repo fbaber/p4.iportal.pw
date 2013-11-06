@@ -1,4 +1,6 @@
 
+
+<div class="col-md-4 col-md-offset-1 centered">
 <h2 class="page-header">Posts you are following:</h2>
 
 <?php if (count($posts) == 0) :?>
@@ -19,3 +21,4 @@
 </article>
 
 <?php endforeach; ?>
+</div>

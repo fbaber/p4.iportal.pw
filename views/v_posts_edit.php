@@ -1,8 +1,9 @@
+
 <form method ='POST' action ='/posts/p_edit/<?=$post['post_id']; ?>'>
 
-<i>Edit your post:</i>
+<h4>Edit your post:</h4>
         <br>
         <textarea id='myPost' cols="50" rows="10" type='text' name='content' required><?=nl2br($post['content'])?></textarea>
-		<br>
+		<br><br>
     <input class="buttons" type='submit' value='Update Post'>
 </form>

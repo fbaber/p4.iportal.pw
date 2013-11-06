@@ -15,7 +15,7 @@
 <?php echo '<br/>'; ?>
 <?php if($user) 
         $convert_time = $user->created;
-        echo 'Member since: ';
+        echo 'You have been a member since: ';
         echo date('M d Y', $convert_time); 
 ?>
 <br/>
@@ -34,7 +34,7 @@
                     </time>
 				               
 				</h4>
-				<div><p><?=$post['content']?><br><?=$post['post_id']?><br><?=$post['user_id']?></p></div>
+				<div><p><?=$post['content']?><br></p></div>
 				<a href='/posts/edit/<?=$post['post_id']; ?>' > <u>Edit this post</u></a>
         </article>
         <br/>

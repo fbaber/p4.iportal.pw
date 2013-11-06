@@ -1,5 +1,7 @@
+<div class="col-md-4 col-md-offset-1 centered">
 <form method='POST' action='/users/p_login'class="userform">
-
+	<br>
+	<h3>Please login to the site:</h3>
     Email<br>
     <input type='text' name='email' required="required">
 
@@ -20,3 +22,4 @@
     <input type='submit' value='Log in'>
 
 </form>
+</div>

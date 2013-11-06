@@ -1,3 +1,4 @@
+<div class="col-md-2 col-md-offset-1 centered">
 <?php foreach($users as $user): ?>
 
     <!-- Print this user's name -->
@@ -15,3 +16,4 @@
     <br><br>
 
 <?php endforeach; ?>
+</div>

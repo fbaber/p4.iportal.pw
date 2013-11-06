@@ -31,9 +31,10 @@
 <body>	
 	
 	<div id="header">
-	<div id='menu' style="background-color:#FFD700; text-align:center;height:60px;width:1200px;float:center; font-family:Georgia Bold; font-size: 18px;position:fixed">
+	<div id='menu' style="text-align:center;height:60px;width:1200px;float:center; font-family:Georgia Bold; font-size: 18px;position:fixed">
 			<a href='/'>Home</a>
 
+			
 			<!-- Menu for users who are logged in -->
 			<?php if($user): ?>
 
@@ -49,6 +50,7 @@
 				<a href='/users/login'>Log in</a>
 
 			<?php endif; ?>
+			
     </div>
 	</div>
 
@@ -63,7 +65,7 @@
 Copyright © Flabber</div>
 -->
 
-<div class="footer" style="background-color:#FFA500;clear:both;text-align:center;width:1500px;position:fixed;op: 50px;
+<div class="footer" style="background-color:#FFA500;clear:both;text-align:center;width:1200px;position:fixed;op: 50px;
 		right: 50px; bottom:0px;">
 Copyright © Flabber</div>
 	<!-- footer -->

@@ -1,3 +1,4 @@
+<div class="col-md-4 col-md-offset-1 centered">
 <form method='POST' action='/posts/p_add'>
 <div class="form-group">
     <label for='content'>New Post:</label><br>
@@ -6,4 +7,5 @@
     <br><br>
     <input type='submit' value='New post'>
 
-</form> 
+</form>
+</div> 
