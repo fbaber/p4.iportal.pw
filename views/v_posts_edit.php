@@ -1,4 +1,5 @@
 
+<div class="payload">
 <form method ='POST' action ='/posts/p_edit/<?=$post['post_id']; ?>'>
 
 <h4>Edit your post:</h4>
@@ -7,3 +8,4 @@
 		<br><br>
     <input class="buttons" type='submit' value='Update Post'>
 </form>
+</div>

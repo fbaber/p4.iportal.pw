@@ -1,6 +1,6 @@
 
 
-<br><br>
+<div class="payload">
 <?php if(!$user): ?>
         <?php Router::redirect("/users/login");  ?>
 <?php else: ?>
@@ -41,6 +41,7 @@
 <?php endforeach; ?>
         <br/>
         
-        <h2> 
+        <h3> 
                 Follow other Flabbers: <a href='/posts/users'>Other Posters</a>
-        </h2>
+        </h3>
+</div>

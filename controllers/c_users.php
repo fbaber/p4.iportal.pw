@@ -44,10 +44,10 @@ class users_controller extends base_controller {
 		
 		if (isset($exists)) {
             $error = true;
-            $this->template->content->error = 'Another account has already been created with this email address.';
+            $this->template->content->error = 'This email address is already registered with the site, please log in.';
             echo $this->template;          
             }
-        	
+        else{	
 		# Dump out the results of POST to see what the form submitted
         #echo '<pre>';
         #print_r($_POST);
@@ -111,7 +111,7 @@ class users_controller extends base_controller {
 			
 		# Render template
             echo $this->template;
-		
+		}
     }
 	
     public function login($error = NULL) {

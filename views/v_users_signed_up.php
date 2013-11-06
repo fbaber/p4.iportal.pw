@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body>
-	<p><b>You have signed up, please <a href='/users/login'>Log in</a> to the site</b>
+	<p><b>You have signed up, please log in to the site</a></b>
 	</p>
 </body>
 </html>

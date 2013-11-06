@@ -1,4 +1,4 @@
-<div class="col-md-4 col-md-offset-1 centered">
+<div class="payload">
 <form method='POST' action='/users/p_login'class="userform">
 	<br>
 	<h3>Please login to the site:</h3>

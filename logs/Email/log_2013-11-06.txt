@@ -1,0 +1,60 @@
+2013-11-06 12:13:44 - INFO --> -------------------------- 
+2013-11-06 12:13:44 - INFO --> Controller/Method: users/p_signup 
+2013-11-06 12:13:44 - INFO --> From: Flabber (admin@iportal.pw) 
+2013-11-06 12:13:44 - INFO --> To: Furrukh (furrukhbaber@hotmail.com),  
+2013-11-06 12:13:44 - INFO --> CC:  
+2013-11-06 12:13:44 - INFO --> BCC:  
+2013-11-06 12:13:44 - INFO --> Subject: Welcome to Flabber 
+2013-11-06 12:13:44 - INFO --> Body: Welcome to Flabber! We hope you find time to flabb each and every day. Be sure to visit Flabber often by visiting http://p2.iportal.pw
+		 
+2013-11-06 12:13:54 - INFO --> FAILED TO SEND EMAIL 
+2013-11-06 12:24:40 - INFO --> -------------------------- 
+2013-11-06 12:24:40 - INFO --> Controller/Method: users/p_signup 
+2013-11-06 12:24:40 - INFO --> From: Flabber (admin@iportal.pw) 
+2013-11-06 12:24:40 - INFO --> To: Furrukh (furrukhb3aber@hotmail.com),  
+2013-11-06 12:24:40 - INFO --> CC:  
+2013-11-06 12:24:40 - INFO --> BCC:  
+2013-11-06 12:24:40 - INFO --> Subject: Welcome to Flabber 
+2013-11-06 12:24:40 - INFO --> Body: Welcome to Flabber! We hope you find time to flabb each and every day. Be sure to visit Flabber often by visiting http://p2.iportal.pw
+		 
+2013-11-06 12:24:50 - INFO --> FAILED TO SEND EMAIL 
+2013-11-06 12:29:01 - INFO --> -------------------------- 
+2013-11-06 12:29:01 - INFO --> Controller/Method: users/p_signup 
+2013-11-06 12:29:01 - INFO --> From: Flabber (admin@iportal.pw) 
+2013-11-06 12:29:01 - INFO --> To: Furrukh (furrukh4baber@hotmail.com),  
+2013-11-06 12:29:01 - INFO --> CC:  
+2013-11-06 12:29:01 - INFO --> BCC:  
+2013-11-06 12:29:01 - INFO --> Subject: Welcome to Flabber 
+2013-11-06 12:29:01 - INFO --> Body: Welcome to Flabber! We hope you find time to flabb each and every day. Be sure to visit Flabber often by visiting http://p2.iportal.pw
+		 
+2013-11-06 12:29:11 - INFO --> FAILED TO SEND EMAIL 
+2013-11-06 12:29:56 - INFO --> -------------------------- 
+2013-11-06 12:29:56 - INFO --> Controller/Method: users/p_signup 
+2013-11-06 12:29:56 - INFO --> From: Flabber (admin@iportal.pw) 
+2013-11-06 12:29:56 - INFO --> To: Furrukh (furrukh5baber@hotmail.com),  
+2013-11-06 12:29:56 - INFO --> CC:  
+2013-11-06 12:29:56 - INFO --> BCC:  
+2013-11-06 12:29:56 - INFO --> Subject: Welcome to Flabber 
+2013-11-06 12:29:56 - INFO --> Body: Welcome to Flabber! We hope you find time to flabb each and every day. Be sure to visit Flabber often by visiting http://p2.iportal.pw
+		 
+2013-11-06 12:30:06 - INFO --> FAILED TO SEND EMAIL 
+2013-11-06 12:35:42 - INFO --> -------------------------- 
+2013-11-06 12:35:42 - INFO --> Controller/Method: users/p_signup 
+2013-11-06 12:35:42 - INFO --> From: Flabber (admin@iportal.pw) 
+2013-11-06 12:35:42 - INFO --> To: Furrukh (furrukh8baber@hotmail.com),  
+2013-11-06 12:35:42 - INFO --> CC:  
+2013-11-06 12:35:42 - INFO --> BCC:  
+2013-11-06 12:35:42 - INFO --> Subject: Welcome to Flabber 
+2013-11-06 12:35:42 - INFO --> Body: Welcome to Flabber! We hope you find time to flabb each and every day. Be sure to visit Flabber often by visiting http://p2.iportal.pw
+		 
+2013-11-06 12:35:52 - INFO --> FAILED TO SEND EMAIL 
+2013-11-06 14:09:25 - INFO --> -------------------------- 
+2013-11-06 14:09:25 - INFO --> Controller/Method: users/p_signup 
+2013-11-06 14:09:25 - INFO --> From: Flabber (admin@iportal.pw) 
+2013-11-06 14:09:25 - INFO --> To: Furrukh (furrukh9baber@hotmail.com),  
+2013-11-06 14:09:25 - INFO --> CC:  
+2013-11-06 14:09:25 - INFO --> BCC:  
+2013-11-06 14:09:25 - INFO --> Subject: Welcome to Flabber 
+2013-11-06 14:09:25 - INFO --> Body: Welcome to Flabber! We hope you find time to flabb each and every day. Be sure to visit Flabber often by visiting http://p2.iportal.pw
+		 
+2013-11-06 14:09:35 - INFO --> FAILED TO SEND EMAIL 

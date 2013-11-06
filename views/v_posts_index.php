@@ -1,6 +1,8 @@
 
 
-<div class="col-md-4 col-md-offset-1 centered">
+
+
+<div class="payload">
 <h2 class="page-header">Posts you are following:</h2>
 
 <?php if (count($posts) == 0) :?>
@@ -22,3 +24,4 @@
 
 <?php endforeach; ?>
 </div>
+

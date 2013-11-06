@@ -8,6 +8,7 @@
 	<!-- Google Web Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Belleza' rel='stylesheet' type='text/css'>
 	
+	<link href="/css/sample-app.css" rel="stylesheet" media="all">
 	<!-- Bootstrap -->
     <link href="/css/bootstrap.min.css" rel="stylesheet" media="all">
 		
@@ -55,17 +56,17 @@
 	</div>
 
     <br>
-
+	
     <?php if(isset($content)) echo $content; ?>
 
 	<?php if(isset($client_files_body)) echo $client_files_body; ?>
-	<hr/>
-<!-- <div class="footer" style="background-color:#FFA500;clear:both;text-align:center;width:1500px;position:absolute;op: 50px;
+	
+<!-- <div class="footer" style="clear:both;text-align:center;width:1500px;position:absolute;op: 50px;
 		right: 50px;">
 Copyright © Flabber</div>
 -->
 
-<div class="footer" style="background-color:#FFA500;clear:both;text-align:center;width:1200px;position:fixed;op: 50px;
+<div class="footer" style="clear:both;text-align:center;width:1200px;position:fixed;op: 50px;
 		right: 50px; bottom:0px;">
 Copyright © Flabber</div>
 	<!-- footer -->
