@@ -32,8 +32,7 @@
 <body>	
 	
 	<div id="header">
-	<div id='menu' style="background-color:#A9F5E1;text-align:center;height:50px;width:1250px;float:center; font-family:Georgia Bold; font-size: 18px;position:fixed; margin-right: 50px; margin-left: 50px;border: 2px solid;
-    border-radius: 20px 20px 20px 20px;">
+	<div class="menuabc">
 			<a href='/'>Home</a>
 
 			
