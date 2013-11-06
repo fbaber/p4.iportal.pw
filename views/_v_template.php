@@ -32,7 +32,8 @@
 <body>	
 	
 	<div id="header">
-	<div id='menu' style="text-align:center;height:60px;width:1200px;float:center; font-family:Georgia Bold; font-size: 18px;position:fixed">
+	<div id='menu' style="background-color:#A9F5E1;text-align:center;height:50px;width:1250px;float:center; font-family:Georgia Bold; font-size: 18px;position:fixed; margin-right: 50px; margin-left: 50px;border: 2px solid;
+    border-radius: 20px 20px 20px 20px;">
 			<a href='/'>Home</a>
 
 			
@@ -67,7 +68,7 @@ Copyright © Flabber</div>
 -->
 
 <div class="footer" style="clear:both;text-align:center;width:1200px;position:fixed;op: 50px;
-		right: 50px; bottom:0px;">
+		right: 50px; bottom:0px; margin-right: 24px; margin-left: 24px;">
 Copyright © Flabber</div>
 	<!-- footer -->
 

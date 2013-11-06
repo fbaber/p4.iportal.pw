@@ -24,13 +24,12 @@ class users_controller extends base_controller {
 
 	public function p_signup() {
 
-        
-		# setup the view
-                #------------------------------------------------------------------
-                $this->template->content = View::instance('v_users_signup');
-                $this->template->title = "Signed-up";
+        # setup the view
+        #------------------------------------------------------------------
+        $this->template->content = View::instance('v_users_signup');
+        $this->template->title = "Signed-up";
 				
-				 # set error var to false
+		# set error var to false
         $error = false;
 		
 		# initiate error

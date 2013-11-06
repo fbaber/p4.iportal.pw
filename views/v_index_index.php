@@ -1,6 +1,6 @@
 <?php if($user) router::redirect('/posts');;?>
-<div id="content" style="border-right-width: 55px; border-left-width: 55px;">
-<div class="row">
+<div id="content" style="border-right-width: 55px; border-left-width: 55px; margin-right: 24px; margin-left: 24px;">
+<div class="row" style="margin-right: 24px; margin-left: 24px;margin-top: 50px;">
 <div class="col-md-10 col-md-offset-1">
 <h1 class="page-header">Welcome to <?=APP_NAME?><?php if($user) echo ', '.$user->first_name; ?></h1>
 </div>
@@ -34,7 +34,7 @@
 </div> 
 </div>-->
 
-<div class="col-md-4 col-md-offset-1 centered">
+<div class="col-md-4 col-md-offset-1 centered" style="margin-left: 140px;">
 <h3 class="centered">Flabber +1 Features:</h3>
 <ul>
 							
