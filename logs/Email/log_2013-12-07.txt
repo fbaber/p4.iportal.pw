@@ -1,0 +1,9 @@
+2013-12-07 12:43:15 - INFO --> -------------------------- 
+2013-12-07 12:43:15 - INFO --> Controller/Method: users/p_signup 
+2013-12-07 12:43:15 - INFO --> From: Flabber (admin@iportal.pw) 
+2013-12-07 12:43:15 - INFO --> To: p4 (p4@test.com),  
+2013-12-07 12:43:15 - INFO --> CC:  
+2013-12-07 12:43:15 - INFO --> BCC:  
+2013-12-07 12:43:15 - INFO --> Subject: Welcome to Flabber 
+2013-12-07 12:43:15 - INFO --> Body: Welcome to Flabber! We hope you find time to flabb each and every day. Be sure to visit Flabber often by visiting http://p2.iportal.pw
+		 
