@@ -18,27 +18,3 @@
 </div>
 </div>
 <br><br><br>
-
-<!--<div class="col-md-10 col-md-offset-1">-->
-<!--<div style="width:75%; left:7%;">
-
-	<div style="width:75%; left:7%;">
-	<!--<div style="left:7%; right:7%; position:relative;">
-                        
-                        <ul>
-							<h4>Flabber +1 Features:</h4>
-                            <li>Sign up confirmation to the new user.</li>
-                            <li>Editing your posts</li>
-                        </ul>
-	</div>
-</div> 
-</div>-->
-
-<div class="col-md-4 col-md-offset-1 centered" style="margin-left: 140px;">
-<h3 class="centered">Flabber +1 Features:</h3>
-<ul>
-							
-                            <li>Sign up confirmation to the new user.</li>
-                            <li>Editing your posts</li>
-                        </ul>
-</div>
