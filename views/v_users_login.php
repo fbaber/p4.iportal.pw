@@ -1,4 +1,4 @@
-<div class="payload">
+<div class="content">
 <form method='POST' action='/users/p_login'class="userform">
 	<br>
 	<h3>Please login to the site:</h3>

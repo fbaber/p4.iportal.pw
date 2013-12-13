@@ -1,48 +1,29 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title><?php if(isset($title)) echo $title . " - "; ?>To P4 Dating Site</title>
-
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />	
-	<meta name="viewport" content="width=device-width; initial-scale=0.9; maximum-scale=1.0; minimum-scale=0.7;">
-	<!-- Google Web Fonts -->
-	<link href='http://fonts.googleapis.com/css?family=Belleza' rel='stylesheet' type='text/css'>
-	
-	<link href="/css/sample-app.css" rel="stylesheet" media="all">
-	<!-- Bootstrap -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet" media="all">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Title of the site | Short description about site">
+    <meta name="author" content="Your name">
+    <title>Title of the site</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap responsive -->
-    <link href="/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
     <!-- Font awesome - iconic font with IE7 support --> 
-    <link href="/css/font-awesome.css" rel="stylesheet">
-    <link href="/css/font-awesome-ie7.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/font-awesome-ie7.css" rel="stylesheet">
     <!-- Bootbusiness theme -->
-    <link href="/css/boot-business.css" rel="stylesheet">
-	<!-- Common JS/CSS: In the previous examples, we were loading hypothetical CSS and JS files that were specific to profile. It's likely though, 
-	that you may have CSS and JS that needs to be loaded on every page of your app such as a master StyleSheet or jQuery. In this 
-	case, you can just hard code the includes into your _v_template.php file rather than invoking it from the controllers each time. -->
-	
-	<!-- Common CSS/JSS -->
-    <link rel="stylesheet" href="/css/app.css" type="text/css">
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
-	<!-- Controller Specific JS/CSS -->
-	<?php if(isset($client_files_head)) echo $client_files_head; ?>
-	
-	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-
-
-</head>
-
-<body>
+    <link href="css/boot-business.css" rel="stylesheet">
+  </head>
+  <body>
     <!-- Start: HEADER -->
     <header>
       <!-- Start: Navigation wrapper -->
       <div class="navbar navbar-fixed-top">
         <div class="navbar-inner">
           <div class="container">
-            <a href="index.html" class="brand brand-bootbus">P4 - Dating</a>
+            <a href="index.html" class="brand brand-bootbus">WebsiteName</a>
             <!-- Below button used for responsive navigation -->
             <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
               <span class="icon-bar"></span>
@@ -56,8 +37,9 @@
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<b class="caret"></b></a>
                   <ul class="dropdown-menu">
                     <li class="nav-header">SERVICES</li>
-                    <li><a href="#">Meet ups</a></li>
-                    <li><a href="#">Match making</a></li>
+                    <li><a href="#">Service1</a></li>
+                    <li><a href="#">Service2</a></li>
+                    <li><a href="#">Service3</a></li>
                     <li><a href="#">All services</a></li>
                   </ul>                  
                 </li>
@@ -65,24 +47,17 @@
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">About<b class="caret"></b></a>
                   <ul class="dropdown-menu">
                     <li><a href="#">Our works</a></li>
+                    <li><a href="#">Parnerships</a></li>
+                    <li><a href="#">Leadership</a></li>
                     <li><a href="#">News</a></li>
                     <li><a href="#">Events</a></li>
                     <li><a href="#">Blog</a></li>
                   </ul>
                 </li>
-				<!-- Menu for users who are logged in -->
-				<?php if($user): ?>
-                <li><a href='/users/logout'>Logout</a></li>
-                <li><a href='/users/profile'>Profile</a></li>
-                <li><a href='/posts/add'>Ping Someone</a></li>
-				<li><a href='/posts/users'>Browse members</a></li>
-				<!-- Menu options for users who are not logged in -->
-				<?php else: ?>
-				
-				
-				<li><a href='/users/signup'>Sign up</a></li>
-				<li><a href='/users/login'>Log in</a></li>
-				<?php endif; ?>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Sign up</a></li>
+                <li><a href="#">Sign in</a></li>
               </ul>
             </div>
           </div>
@@ -114,7 +89,7 @@
                       </h3>                      
                     </div>
                     <div class="span5">
-                      <img src="/img/placeholder.jpg" class="thumbnail">
+                      <img src="img/placeholder.jpg" class="thumbnail">
                     </div>
                   </div>                  
                 </div>
@@ -133,7 +108,7 @@
                       </h3>                      
                     </div>
                     <div class="span5">
-                      <img src="/img/placeholder.jpg" class="thumbnail">
+                      <img src="img/placeholder.jpg" class="thumbnail">
                     </div>
                   </div>                  
                 </div>
@@ -153,7 +128,7 @@
                       </h3>                      
                     </div>
                     <div class="span5">
-                      <img src="/img/placeholder.jpg" class="thumbnail">
+                      <img src="img/placeholder.jpg" class="thumbnail">
                     </div>
                   </div>                  
                 </div>
@@ -173,7 +148,7 @@
                       </h3>                      
                     </div>
                     <div class="span5">
-                      <img src="/img/placeholder.jpg" class="thumbnail">
+                      <img src="img/placeholder.jpg" class="thumbnail">
                     </div>
                   </div>                  
                 </div>
@@ -195,7 +170,7 @@
             <ul class="thumbnails">
               <li class="span4">
                 <div class="thumbnail">
-                  <img src="/img/placeholder-360x200.jpg" alt="product name">
+                  <img src="img/placeholder-360x200.jpg" alt="product name">
                   <div class="caption">
                     <h3>Service title</h3>
                     <p>
@@ -213,7 +188,7 @@
               </li>
               <li class="span4">
                 <div class="thumbnail">
-                  <img src="/img/placeholder-360x200.jpg" alt="product name">
+                  <img src="img/placeholder-360x200.jpg" alt="product name">
                   <div class="caption">
                     <h3>Service title</h3>
                     <p>
@@ -231,7 +206,7 @@
               </li>
               <li class="span4">
                 <div class="thumbnail">
-                  <img src="/img/placeholder-360x200.jpg" alt="product name">
+                  <img src="img/placeholder-360x200.jpg" alt="product name">
                   <div class="caption">
                     <h3>Service title</h3>
                     <p>
@@ -333,8 +308,8 @@
       </div>
     </footer>
     <!-- End: FOOTER -->
-    <script type="text/javascript" src="/js/jquery.min.js"></script>
-    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="/js/boot-business.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/boot-business.js"></script>
   </body>
 </html>
