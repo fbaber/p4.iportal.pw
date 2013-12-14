@@ -73,10 +73,10 @@ class users_controller extends base_controller {
 		$from = Array("name" => APP_NAME, "email" => APP_EMAIL);
 
 		# Subject
-		$subject = "Welcome to Flabber";
+		$subject = "Welcome to P4 Dating Site";
 
 		# You can set the body as just a string of text
-		$body = "Welcome to Flabber! We hope you find time to flabb each and every day. Be sure to visit Flabber often by visiting http://p2.iportal.pw
+		$body = "Welcome to P4 Dating Site! We hope you find the person you are looking for. Be sure to visit us often by visiting http://p4.iportal.pw
 		";
 
 		# OR, if your email is complex and involves HTML/CSS, you can build the body via a View just like we do in our controllers
@@ -109,6 +109,28 @@ class users_controller extends base_controller {
 		if($this->user) {
         Router::redirect('/users/profile');
 		}
+		
+		
+		# Create an array of 1 or many client files to be included in the head
+		$client_files_head = Array(
+			'/css/bootstrap.min.css',
+			'css/font-awesome.css',
+			'/css/bootstrap-responsive.min.css',
+			'/css/font-awesome-ie7.css',
+			'/css/boot-business.css'
+			);
+
+		# Use load_client_files to generate the links from the above array
+		$this->template->client_files_head = Utils::load_client_files($client_files_head);  
+
+		# Create an array of 1 or many client files to be included before the closing </body> tag
+		$client_files_body = Array(
+			'/js/bootstrap.min.js',
+			'/js/profile.min.js'
+			);
+
+		# Use load_client_files to generate the links from the above array
+		$this->template->client_files_body = Utils::load_client_files($client_files_body);  
 		
 		# Setup view
         $this->template->content = View::instance('v_users_login');

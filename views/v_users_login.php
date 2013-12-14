@@ -1,4 +1,4 @@
-<div class="content">
+<div class="content" style="margin-top: 5px; border-left-width: 50px; padding-left: 50px;">
 <form method='POST' action='/users/p_login'class="userform">
 	<br>
 	<h3>Please login to the site:</h3>

@@ -42,7 +42,7 @@
       <div class="navbar navbar-fixed-top">
         <div class="navbar-inner">
           <div class="container">
-            <a href="index.html" class="brand brand-bootbus">P4 - Dating</a>
+            <a href="/" class="brand brand-bootbus">P4 - Dating</a>
             <!-- Below button used for responsive navigation -->
             <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
               <span class="icon-bar"></span>
@@ -93,9 +93,9 @@
     <!-- End: HEADER -->
 	
 	
-    <!-- Start: MAIN CONTENT -->
+    <!-- Start: MAIN CONTENT 
     <div class="content">
-      <!-- Start: slider -->
+      <!-- Start: slider 
       <div class="slider">
         <div class="container-fluid">
           <div id="heroSlider" class="carousel slide">
@@ -184,9 +184,9 @@
           </div>
         </div>
       </div>
-      <!-- End: slider -->
+      End: slider -->
      
-	 <!-- Start: Services LIST -->
+	 <!-- Start: Services LIST 
         <div class="container">
           <div class="page-header">
             <h2>Our Services</h2>
@@ -250,11 +250,13 @@
             </ul>
           </div>
         </div>
-      <!-- End: services LIST -->
+      <!-- End: services LIST 
     </div>
-    <!-- End: MAIN CONTENT -->
+    <!-- End: MAIN CONTENT 
+-->
+	<?php if(isset($content)) echo $content; ?>
 
-
+	<?php if(isset($client_files_body)) echo $client_files_body; ?>
     <!-- Start: FOOTER -->
     <footer>
       <div class="container">

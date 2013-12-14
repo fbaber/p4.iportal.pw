@@ -19,7 +19,7 @@ class index_controller extends base_controller {
 			$this->template->content = View::instance('v_index_index');
 			
 		# Now set the <title> tag
-			$this->template->title = "Project 2 - p2.iportal.pw";
+			$this->template->title = "Project 4 - p4.iportal.pw";
 	
 		# CSS/JS includes
 			/*

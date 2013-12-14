@@ -1,5 +1,5 @@
 
-<div class="content">
+<div class="content" style="margin-top: 5px; border-left-width: 50px; padding-left: 50px;">
 <form method='POST' action='/users/p_signup'>
 	<h3>Please sign up to start Dating</h3>
 	<br>
@@ -29,10 +29,10 @@
 	<label>I am a</label><br>
     <div class="row" style="padding-left: 20px;">
 		<label class="radio-inline">
-          <input name="radioGroup" id="radio1" value="option1" type="radio" checked=""> Male
+          <input name="self_gender" id="self_gender" value="Male" type="radio" checked=""> Male
         </label>
         <label class="radio-inline">
-          <input name="radioGroup" id="radio2" value="option2" type="radio"> Female
+          <input name="self_gender" id="self_gender" value="Female" type="radio"> Female
         </label>
   	</div>
 	<br><br>
@@ -40,10 +40,10 @@
     
 	<div class="row" style="padding-left: 20px;">
 		<label class="radio-inline">
-          <input name="radioGroup2" id="radio1" value="option1" type="radio"> Male
+          <input name="seeking_gender" id="seeking_gender" value="Male" type="radio"> Male
         </label>
         <label class="radio-inline">
-          <input name="radioGroup2" id="radio2" value="option2" type="radio" checked=""> Female
+          <input name="seeking_gender" id="seeking_gender" value="Female" type="radio" checked=""> Female
         </label>
   	</div><br><br>
 	<label>Chose a Password</label><br>
