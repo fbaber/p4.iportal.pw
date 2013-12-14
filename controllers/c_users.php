@@ -1,6 +1,7 @@
 <?php
 class users_controller extends base_controller {
-
+	
+	public $new_user_id;
     public function __construct() {
         parent::__construct();
         # echo "users_controller construct called<br><br>";
@@ -21,7 +22,41 @@ class users_controller extends base_controller {
         # Render template
             echo $this->template;
     }
+	
+	# Capture User preference who they are seeking and their biographical details 
+	public function user_signup_details() {
 
+        # setup the view
+        #------------------------------------------------------------------
+        $this->template->content = View::instance('v_users_details');
+        $this->template->title = "Your Profile Details";
+				
+			
+		// check whether this user's email already exists (sanitize input first)
+        $_POST = DB::instance(DB_NAME)->sanitize($_POST);
+        echo $new_user_id;
+		# Associate this post with this user
+        #$_POST['user_id']  = $new_user_id;
+		
+		# Dump out the results of POST to see what the form submitted
+        echo '<pre>';
+        print_r($_POST);
+        echo '</pre>';   
+
+		# Insert this user details into the database 
+		$user_id = DB::instance(DB_NAME)->insert("user_details", $_POST);
+
+		# Added this code 10-24-13 to display a page when user have singed up for the app 
+		# Setup view
+            $this->template->content = View::instance('v_users_signed_up');
+            $this->template->title   = "Sign Up Success";
+			
+		# Render template
+            echo $this->template;
+		
+    }
+	
+	# User Details function ends here
 	public function p_signup() {
 
         # setup the view
@@ -51,7 +86,8 @@ class users_controller extends base_controller {
         #echo '<pre>';
         #print_r($_POST);
         #echo '</pre>';   
-
+		global $new_user_id;
+		$new_user_id = $POST['user_id'];
 		# More data we want stored with the user
 		$_POST['created']  = Time::now();
 		$_POST['modified'] = Time::now();
@@ -93,8 +129,8 @@ class users_controller extends base_controller {
 		 
 		 # Added this code 10-24-13 to display a page when user have singed up for the app 
 		# Setup view
-            $this->template->content = View::instance('v_users_signed_up');
-            $this->template->title   = "Sign Up Success";
+            $this->template->content = View::instance('v_users_details');
+            $this->template->title   = "STEP 2. Your Basic Details";
 			
 		# Render template
             echo $this->template;
