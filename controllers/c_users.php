@@ -1,12 +1,15 @@
 <?php
 class users_controller extends base_controller {
 	
-	public $new_user_id;
+	
     public function __construct() {
         parent::__construct();
         # echo "users_controller construct called<br><br>";
     } 
 
+	public function new_user_id(){
+		global $new_user_id;
+	}
     public function index() {
         echo "This is the index page";
     }
@@ -34,14 +37,14 @@ class users_controller extends base_controller {
 			
 		// check whether this user's email already exists (sanitize input first)
         $_POST = DB::instance(DB_NAME)->sanitize($_POST);
-        echo $new_user_id;
+        # echo $new_user_id;
 		# Associate this post with this user
-        #$_POST['user_id']  = $new_user_id;
+        #$_POST['user_id']  = $GLOBALS['new_user_id'];
 		
 		# Dump out the results of POST to see what the form submitted
-        echo '<pre>';
-        print_r($_POST);
-        echo '</pre>';   
+        #echo '<pre>';
+        #print_r($_POST);
+        #echo '</pre>';   
 
 		# Insert this user details into the database 
 		$user_id = DB::instance(DB_NAME)->insert("user_details", $_POST);
@@ -86,8 +89,7 @@ class users_controller extends base_controller {
         #echo '<pre>';
         #print_r($_POST);
         #echo '</pre>';   
-		global $new_user_id;
-		$new_user_id = $POST['user_id'];
+		#$GLOBALS['new_user_id']= $_POST['user_id'];
 		# More data we want stored with the user
 		$_POST['created']  = Time::now();
 		$_POST['modified'] = Time::now();

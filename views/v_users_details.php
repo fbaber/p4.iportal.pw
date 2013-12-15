@@ -6,6 +6,7 @@
 	<h3>STEP 2. Your Basic Details</h3>
 	<br>
 	<ul>
+	<input type="hidden" name="user_id" id="user_id" value=" ">
     <li id="memberAttributeFormHeading">Your Appearance</li>
     <li class="clearfix">
         <label id="memberAttributeFormLabel">Hair color:</label>
@@ -293,7 +294,7 @@
                     //-->
                     </script>
     </li>
-	class="clearfix">
+	<class="clearfix">
         <label id="memberAttributeFormLabel">Body type:</label>
         <span id="bodyStyle_validate"> 
                         <select name="bodystyle" id="bodystyle">

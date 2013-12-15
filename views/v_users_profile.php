@@ -1,6 +1,6 @@
 
 
-<div class="payload">
+<div class="content">
 <?php if(!$user): ?>
         <?php Router::redirect("/users/login");  ?>
 <?php else: ?>
