@@ -58,7 +58,6 @@
                     <li class="nav-header">SERVICES</li>
                     <li><a href="#">Meet ups</a></li>
                     <li><a href="#">Match making</a></li>
-                    <li><a href="#">All services</a></li>
                   </ul>                  
                 </li>
                 <li class="dropdown">
@@ -76,6 +75,7 @@
                 <li><a href='/users/profile'>Profile</a></li>
                 <li><a href='/posts/add'>Ping Someone</a></li>
 				<li><a href='/posts/users'>Browse members</a></li>
+				<li><a href='/currency/swap'>All services</a></li>
 				<!-- Menu options for users who are not logged in -->
 				<?php else: ?>
 				
