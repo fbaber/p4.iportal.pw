@@ -1,0 +1,9 @@
+2013-12-15 18:51:09 - INFO --> -------------------------- 
+2013-12-15 18:51:09 - INFO --> Controller/Method: users/p_signup 
+2013-12-15 18:51:09 - INFO --> From: P4 Dating (admin@iportal.pw) 
+2013-12-15 18:51:09 - INFO --> To: Furrukh (furrukhbaberhh@hotmail.com),  
+2013-12-15 18:51:09 - INFO --> CC:  
+2013-12-15 18:51:09 - INFO --> BCC:  
+2013-12-15 18:51:09 - INFO --> Subject: Welcome to P4 Dating Site 
+2013-12-15 18:51:09 - INFO --> Body: Welcome to P4 Dating Site! We hope you find the person you are looking for. Be sure to visit us often by visiting http://p4.iportal.pw
+		 

@@ -47,7 +47,7 @@ class users_controller extends base_controller {
         #echo '</pre>';   
 
 		# Insert this user details into the database 
-		$user_id = DB::instance(DB_NAME)->insert("user_details", $_POST);
+		#$user_id = DB::instance(DB_NAME)->insert("user_details", $_POST);
 
 		# Added this code 10-24-13 to display a page when user have singed up for the app 
 		# Setup view

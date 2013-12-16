@@ -67,6 +67,7 @@ class currency_controller extends base_controller {
 		
 		
 		# Pass data to the View
+			$this->template->content->value = $value;
             $this->template->content->currency1 = $currency1;    
 			$this->template->content->currency2 = $currency2;
 			$this->template->content->exchange_value = $exchange_value;
@@ -77,29 +78,30 @@ class currency_controller extends base_controller {
 		
         # Associate this post with this user
         
-		#$_POST['user_id']  = $this->user->user_id;
+		$_POST['user_id']  = $this->user->user_id;
+		
+		$_POST['exchange_value'] = $exchange_value;
 
         # Unix timestamp of when this post was created / modified
-        #$_POST['created']  = Time::now();
+        $_POST['as_of_date']  = Time::now();
         #$_POST['modified'] = Time::now();
 
         # Insert
         # Note we didn't have to sanitize any of the $_POST data because we're using the insert method which does it for us
-        #DB::instance(DB_NAME)->insert('currency_tbl', $_POST);
+        DB::instance(DB_NAME)->insert('currency_tbl', $_POST);
 
         # Quick and dirty feedback
         # echo "Your post has been added. <a href='/posts/add'>Add another</a>";
 		
 		# Send the user to profile page where they can see the posts
 		#Router::redirect("/currency/swap");
-
     }
 	
-	public function index() {
+	public function currency_exchange_history() {
 
 	# Set up the View
-    $this->template->content = View::instance('v_posts_index');
-    $this->template->title   = "All members Tweets";
+    $this->template->content = View::instance('v_currency_exchange_history');
+    $this->template->title   = "Your Currency exchange history";
 
     # Query
     $q = 'SELECT 
@@ -116,9 +118,12 @@ class currency_controller extends base_controller {
         INNER JOIN users 
             ON posts.user_id = users.user_id
         WHERE users_users.user_id = '.$this->user->user_id;
-
+	
+	$q2 = "SELECT * 
+        FROM currency_tbl
+        WHERE user_id = ".$this->user->user_id;
     # Run the query, store the results in the variable $posts
-    $posts = DB::instance(DB_NAME)->select_rows($q);
+    $posts = DB::instance(DB_NAME)->select_rows($q2);
 
     # Pass data to the View
     $this->template->content->posts = $posts;

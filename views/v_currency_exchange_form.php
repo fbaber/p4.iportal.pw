@@ -3,10 +3,11 @@
 <h2>Easy currency converter for major currencies</h2>
 	<br>
 	<div class="content">
+	<input type="hidden" name="exchange_value" value="1">
 	Currency Value:
-    <input type='text' id='value' maxlength="10" size="10">
+    <input type='text' id='value' name="value" maxlength="10" size="10">
 	Convert from: 
-	<select id="currency1" autofocus>
+	<select id="currency1" name="currency1" autofocus>
 	<option title="US Dollar $" value="USD">USD</option>
 	<option title="EU Euro €" value="EUR">EUR</option>
 	<option title="British Pound £" value="GBP">GBP</option>
@@ -19,7 +20,7 @@
 	<br><br>
 	<br><br>
 	Convert to:
-	<select id="currency2" autofocus>
+	<select id="currency2" name="currency2" autofocus>
 	<option title="EU Euro €" value="EUR">EUR</option>
 	<option title="British Pound £" value="GBP">GBP</option>
 	<option title="Canadian Dollar $" value="CAD">CAD</option>
