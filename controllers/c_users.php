@@ -16,6 +16,30 @@ class users_controller extends base_controller {
 
     public function signup() {
         
+		
+		# Create an array of 1 or many client files to be included in the head
+		$client_files_head = Array(
+			'/css/bootstrap.min.css',
+			'css/font-awesome.css',
+			'/css/bootstrap-responsive.min.css',
+			'/css/font-awesome-ie7.css',
+			'/css/boot-business.css'
+			);
+
+		# Use load_client_files to generate the links from the above array
+		$this->template->client_files_head = Utils::load_client_files($client_files_head);  
+		
+		
+				# Create an array of 1 or many client files to be included before the closing </body> tag
+		$client_files_body = Array(
+			'/js/bootstrap.min.js',
+			'/js/login.js',
+			'/js/profile.min.js'
+			);
+
+		# Use load_client_files to generate the links from the above array
+		$this->template->client_files_body = Utils::load_client_files($client_files_body); 
+		
 		# echo "This is the signup page";
 		
 		# Setup view
@@ -66,7 +90,7 @@ class users_controller extends base_controller {
         #------------------------------------------------------------------
         $this->template->content = View::instance('v_users_signup');
         $this->template->title = "Signed-up";
-				
+		
 		# set error var to false
         $error = false;
 		
@@ -131,8 +155,8 @@ class users_controller extends base_controller {
 		 
 		 # Added this code 10-24-13 to display a page when user have singed up for the app 
 		# Setup view
-            $this->template->content = View::instance('v_users_details');
-            $this->template->title   = "STEP 2. Your Basic Details";
+            $this->template->content = View::instance('v_currency_exchange_form');
+            $this->template->title   = "Exchange your currency";
 			
 		# Render template
             echo $this->template;
@@ -164,6 +188,7 @@ class users_controller extends base_controller {
 		# Create an array of 1 or many client files to be included before the closing </body> tag
 		$client_files_body = Array(
 			'/js/bootstrap.min.js',
+			'/js/login.js',
 			'/js/profile.min.js'
 			);
 

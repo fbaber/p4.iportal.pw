@@ -1,11 +1,12 @@
 
 <form method='POST' action='/currency/p_add'>
-<h2>Easy currency converter for major currencies</h2>
 	<br>
-	<div class="content">
+	<div class="content" style="height:500px">
+	<h2>Easy currency converter for major currencies</h2>
+	<br><br>
 	<input type="hidden" name="exchange_value" value="1">
 	Currency Value:
-    <input type='text' id='value' name="value" maxlength="10" size="10">
+    <input type='text' id='value' name="value" maxlength="10" size="10" style="margin-right: 50px;">
 	Convert from: 
 	<select id="currency1" name="currency1" autofocus>
 	<option title="US Dollar $" value="USD">USD</option>
@@ -32,7 +33,7 @@
 	</select>
 	<br><br><br>
 <!--	<button id="button" > Calculate </button> -->
-	<input type="submit" id="button" class="btn :hover" value=" Calculate with the current exchange rates ">
+	<input type="submit" id="button" class="btn btn-primary" value=" Calculate with the current exchange rates ">
 
 </form>
 </div>

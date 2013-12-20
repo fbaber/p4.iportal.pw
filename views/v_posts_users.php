@@ -1,5 +1,5 @@
 
-<div class="payload">
+<div class="content" style="padding-top: 110px;">
 <?php foreach($users as $user): ?>
 
     <!-- Print this user's name -->
