@@ -16,9 +16,9 @@ $("#first_name").change(function() {
 $("#last_name").change(function() {
 			  //xTriggered++;
 			  
-		var first_name = $("#last_name").val();
+		var last_name = $("#last_name").val();
 			 // alert("Hello");
-		if($.isNumeric(parseInt(first_name)) || first_name==null || first_name=="" || !(first_name.match(/^[A-z]+$/)))
+		if($.isNumeric(parseInt(last_name)) || last_name==null || last_name=="" || !(last_name.match(/^[A-z]+$/)))
 			{
 			//alert("Please enter a valid first name!");
 			$('#lname_msg').html("Please enter a valid last name.");
@@ -64,7 +64,7 @@ $("#cpassword").change(function(){
 		//$("#cpassword").validate();
 		var cpassword = $("#cpassword").val();
 		var password = $("#password").val();
-		console.log(password);
+		//console.log(password);
 		if((password.length < 7) || !(cpassword == password)){
 		//alert(" pw <5");
 		$('#cpassword_msg').html("Please enter the same Password as above.");
@@ -169,3 +169,5 @@ $("#form").submit(function(){
 		return false;
 		}
 		});
+// Validate the sign up page:
+		

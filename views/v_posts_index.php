@@ -2,7 +2,7 @@
 
 
 
-<div class="content" style="height:500px; padding-top: 110px;">
+<div class="content" style="padding-top: 110px; overflow:auto;">
 <h2 class="page-header">Posts you are following:</h2>
 
 <?php if (count($posts) == 0) :?>

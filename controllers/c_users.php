@@ -33,7 +33,8 @@ class users_controller extends base_controller {
 				# Create an array of 1 or many client files to be included before the closing </body> tag
 		$client_files_body = Array(
 			'/js/bootstrap.min.js',
-			'/js/login.js'
+			'/js/login.js',
+			'/js/signup.js'
 			);
 
 		# Use load_client_files to generate the links from the above array
@@ -186,8 +187,7 @@ class users_controller extends base_controller {
 
 		# Create an array of 1 or many client files to be included before the closing </body> tag
 		$client_files_body = Array(
-			'/js/bootstrap.min.js',
-			'/js/login.js'
+			'/js/bootstrap.min.js'
 			);
 
 		# Use load_client_files to generate the links from the above array

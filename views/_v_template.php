@@ -88,7 +88,7 @@
               <ul class="quick-links">
                 <li><a href="http://finance.yahoo.com/currency-converter/#from=USD;to=EUR;amt=1" target="_blank">Patnerships</a></li>
                 <li><a href="http://finance.yahoo.com/" target="_blank">News</a></li>
-                <ul>
+                </ul>
             </nav>          
           </div>
         </div>

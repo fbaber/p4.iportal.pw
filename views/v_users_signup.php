@@ -1,6 +1,5 @@
-
 <div class="content" style="margin-top: 5px; border-left-width: 50px; padding-left: 50px;">
-<form method='POST' action='/users/p_signup'>
+<form id="signup" method='POST' action='/users/p_signup'>
 	<h3>Please sign up to transfer money</h3>
 	<br>
 	<?php if(isset($error)): ?>
@@ -14,12 +13,10 @@
     <input class="input-large" type='text' name='first_name' required="required" placeholder="First Name" id="first_name">
 	<div id="fname_msg"style="color:#FF0040; font-family: "Arial";"></div>
     <br><br>
-
     <label>Last Name</label><br>
     <input class="input-large" type='text' name='last_name' required="required" placeholder="Last Name" id="last_name">
 	<div id="lname_msg"style="color:#FF0040; font-family: "Arial";"></div>
     <br><br>
-
     <label>Email</label><br>
     <input class="input-large" type='email' name='email' required="required" placeholder="Email address" id="email">
 	<div id="email_msg"style="color:#FF0040; font-family: "Arial";"></div>
@@ -39,27 +36,6 @@
     <input class="input-large" type='text' name='city' required="required" placeholder="City" id="city">
 	<div id="city_msg"style="color:#FF0040; font-family: "Arial";"></div>
     <br><br>
-<!--	
-	<label>I am a</label><br>
-    <div class="row" style="padding-left: 20px;">
-		<label class="radio-inline">
-          <input name="self_gender" id="self_gender" value="Male" type="radio" checked=""> Male
-        </label>
-        <label class="radio-inline">
-          <input name="self_gender" id="self_gender" value="Female" type="radio"> Female
-        </label>
-  	</div>
-	<br><br>
-	<label>Seeking a </label><br>
-    
-	<div class="row" style="padding-left: 20px;">
-		<label class="radio-inline">
-          <input name="seeking_gender" id="seeking_gender" value="Male" type="radio"> Male
-        </label>
-        <label class="radio-inline">
-          <input name="seeking_gender" id="seeking_gender" value="Female" type="radio" checked=""> Female
-        </label>
-  	</div><br><br> -->
 	<label>Chose a Password</label><br>
     <input class="input-large" type='password' name='password' required="required" placeholder="Password" id="password">
 	<div id="password_msg"style="color:#FF0040; font-family: "Arial";"></div>
@@ -70,6 +46,5 @@
 	<div id="cpassword_msg"style="color:#FF0040; font-family: "Arial";"></div>
 	<br><br>
     <input type='submit' class="btn btn-primary" value='Sign up'>
-
 </form>
 </div>
