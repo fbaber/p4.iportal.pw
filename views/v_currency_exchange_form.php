@@ -6,7 +6,7 @@
 	<br><br>
 	<input type="hidden" name="exchange_value" value="1">
 	Currency Value:
-    <input type='number' id='value' name="value" maxlength="10" size="10" placeholder="numeric value"style="margin-right: 50px;" required>
+    <input type='number' id='value' name="value" maxlength="10" size="10" placeholder="numeric value only"style="margin-right: 50px;" required>
 	Convert from: 
 	<select id="currency1" name="currency1" autofocus>
 	<option title="US Dollar $" value="USD">USD</option>
