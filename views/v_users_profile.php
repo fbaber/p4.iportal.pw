@@ -22,7 +22,9 @@
 
 <hr/>
 <br/>
-
+<?php if (count($posts) == 0) :?>
+        <p>Hello there, you haven't blogged on this site yet<br>Why not <a href="/posts/add">post a note for other currency traders</a></p>
+<?php endif; ?>
 <?php foreach($posts as $post): ?>
         
         <article>
@@ -42,6 +44,6 @@
         <br/>
         
         <h3> 
-                Follow other Flabbers: <a href='/posts/users'>Other Posters</a>
+                Follow other Flabbers: <a href='/posts/users'>Other Traders</a>
         </h3>
 </div>

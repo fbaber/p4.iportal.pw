@@ -3,6 +3,13 @@
 <form method='POST' action='/users/p_signup'>
 	<h3>Please sign up to transfer money</h3>
 	<br>
+	<?php if(isset($error)): ?>
+                <div class='error' style="color:#FF0040; font-family: "Arial";">
+                        <?php echo $error; ?> 
+                        <br>                     
+                </div>
+                <br>
+    <?php endif; ?>
     <label>First Name</label><br>
     <input class="input-large" type='text' name='first_name' required="required" placeholder="First Name" id="first_name">
 	<div id="fname_msg"style="color:#FF0040; font-family: "Arial";"></div>
@@ -62,13 +69,6 @@
     <input class="password" type='password' required="required" placeholder="Confirm Password" id="cpassword">
 	<div id="cpassword_msg"style="color:#FF0040; font-family: "Arial";"></div>
 	<br><br>
-            <?php if(isset($error)): ?>
-                <div class='error'>
-                        <?php echo $error; ?> 
-                        <br>                     
-                </div>
-                <br>
-            <?php endif; ?>
     <input type='submit' class="btn btn-primary" value='Sign up'>
 
 </form>

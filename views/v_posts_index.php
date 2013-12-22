@@ -2,11 +2,11 @@
 
 
 
-<div class="content">
+<div class="content" style="height:500px; padding-top: 110px;">
 <h2 class="page-header">Posts you are following:</h2>
 
 <?php if (count($posts) == 0) :?>
-        <p>Hello there,<?=$post['first_name']?> you haven't followed anyone on this micro blog yet.<br>Why not <a href="/posts/users">follow other Flabbers</a></p>
+        <p>Hello there, you haven't followed anyone on this micro blog yet.<br>Why not <a href="/posts/users">follow other currency traders</a></p>
 <?php endif; ?>
 
 <?php foreach($posts as $post): ?>

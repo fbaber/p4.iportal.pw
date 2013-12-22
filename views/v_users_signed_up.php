@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <body>
-<div class="content" style="margin-top: 5px; border-left-width: 50px; padding-left: 50px;">
-	<p><b>You have signed up, please log in to the site</a></b>
+<div class="content" style="height:500px; padding-top: 110px;">
+	<p><b>You have signed up, please <a href='/users/login'>log in to the site</a></b>
 	</p>
 </div>
 </body>

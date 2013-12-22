@@ -134,10 +134,10 @@ class users_controller extends base_controller {
 		$from = Array("name" => APP_NAME, "email" => APP_EMAIL);
 
 		# Subject
-		$subject = "Welcome to P4 Dating Site";
+		$subject = "Welcome to Currency Exchange Applicaiton";
 
 		# You can set the body as just a string of text
-		$body = "Welcome to P4 Dating Site! We hope you find the person you are looking for. Be sure to visit us often by visiting http://p4.iportal.pw
+		$body = "Welcome to Money Exchange Site! We hope you find this website usefull. please log in to the site by visiting http://p4.iportal.pw/users/login
 		";
 
 		# OR, if your email is complex and involves HTML/CSS, you can build the body via a View just like we do in our controllers
@@ -154,8 +154,8 @@ class users_controller extends base_controller {
 		 
 		 # Added this code 10-24-13 to display a page when user have singed up for the app 
 		# Setup view
-            $this->template->content = View::instance('v_currency_exchange_form');
-            $this->template->title   = "Exchange your currency";
+            $this->template->content = View::instance('v_users_signed_up');
+            $this->template->title   = "Log in to Exchange your currency";
 			
 		# Render template
             echo $this->template;
