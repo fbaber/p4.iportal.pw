@@ -146,3 +146,26 @@ $("#state").change(function() {
 			$('#state_msg').html(" ");
 			}
 		});
+// Validate Currency value - if it is numeric
+$("#value").keyup(function(){
+		var currency = $("#value").val();
+		
+		// alert(weight_unit);
+		if($.isNumeric(currency)){
+		$('#value_msg').html(" ");
+		}
+		else{
+		$('#value_msg').html("Please enter a valid value for currency!");
+		}
+		});
+// Validate the submit button as well on currency page 
+$("#form").submit(function(){
+		var currency = $("#value").val();
+		
+		// alert(weight_unit);
+		if(!($.isNumeric(currency))){
+		//alert("You entered a numeric value "+currency);
+		alert("Please enter a valid value for currency!");
+		return false;
+		}
+		});

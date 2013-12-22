@@ -2,7 +2,7 @@
 
 
 
-<div class="payload">
+<div class="content">
 <h2 class="page-header">Posts you are following:</h2>
 
 <?php if (count($posts) == 0) :?>

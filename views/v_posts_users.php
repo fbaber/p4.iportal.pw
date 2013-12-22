@@ -11,7 +11,7 @@
 
     <!-- Otherwise, show the follow link -->
     <?php else: ?>
-        <a href='/posts/follow/<?=$user['user_id']?>'>Express Interest</a>
+        <a href='/posts/follow/<?=$user['user_id']?>'>Follow this currency trader</a>
     <?php endif; ?>
 
     <br><br>

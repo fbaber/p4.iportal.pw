@@ -11,7 +11,16 @@ class currency_controller extends base_controller {
     }
 
     public function swap() {
+		
+				# Create an array of 1 or many client files to be included before the closing </body> tag
+		$client_files_body = Array(
+			'/js/bootstrap.min.js',
+			'/js/login.js'
+			);
 
+		# Use load_client_files to generate the links from the above array
+		$this->template->client_files_body = Utils::load_client_files($client_files_body); 
+		
         # Setup view
         $this->template->content = View::instance('v_currency_exchange_form');
         $this->template->title   = "currency exchange";
@@ -65,18 +74,7 @@ class currency_controller extends base_controller {
 		$this->template->content = View::instance('v_currency_exchange_result');
             $this->template->title = "currency exchange results";
 		
-		
-		# Pass data to the View
-			$this->template->content->value = $value;
-            $this->template->content->currency1 = $currency1;    
-			$this->template->content->currency2 = $currency2;
-			$this->template->content->exchange_value = $exchange_value;
-		
-		# **************
-		 # Render template
-			echo $this->template;
-		
-        # Associate this post with this user
+		# Associate this post with this user
         
 		$_POST['user_id']  = $this->user->user_id;
 		
@@ -84,6 +82,19 @@ class currency_controller extends base_controller {
 
         # Unix timestamp of when this post was created / modified
         $_POST['as_of_date']  = Time::now();
+		
+		# Pass data to the View
+			$this->template->content->value = $value;
+            $this->template->content->currency1 = $currency1;    
+			$this->template->content->currency2 = $currency2;
+			$this->template->content->exchange_value = $exchange_value;
+			$this->template->content->time_stamp = $_POST['as_of_date'];
+		
+		# **************
+		 # Render template
+			echo $this->template;
+		
+        
         #$_POST['modified'] = Time::now();
 
         # Insert

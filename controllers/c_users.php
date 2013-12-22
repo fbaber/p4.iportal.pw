@@ -33,8 +33,7 @@ class users_controller extends base_controller {
 				# Create an array of 1 or many client files to be included before the closing </body> tag
 		$client_files_body = Array(
 			'/js/bootstrap.min.js',
-			'/js/login.js',
-			'/js/profile.min.js'
+			'/js/login.js'
 			);
 
 		# Use load_client_files to generate the links from the above array
@@ -188,8 +187,7 @@ class users_controller extends base_controller {
 		# Create an array of 1 or many client files to be included before the closing </body> tag
 		$client_files_body = Array(
 			'/js/bootstrap.min.js',
-			'/js/login.js',
-			'/js/profile.min.js'
+			'/js/login.js'
 			);
 
 		# Use load_client_files to generate the links from the above array
@@ -285,18 +283,17 @@ class users_controller extends base_controller {
 
    
 		# Create an array of 1 or many client files to be included in the head
-		$client_files_head = Array(
-			'/css/bootstrap.min.css',
-			'/css/bootstrap-theme.min.css'
-			);
+		#$client_files_head = Array(
+		#	'/css/bootstrap.min.css',
+		#	'/css/bootstrap-theme.min.css'
+		#	);
 
 		# Use load_client_files to generate the links from the above array
-		$this->template->client_files_head = Utils::load_client_files($client_files_head);  
+		#$this->template->client_files_head = Utils::load_client_files($client_files_head);  
 
 		# Create an array of 1 or many client files to be included before the closing </body> tag
 		$client_files_body = Array(
-			'/js/bootstrap.min.js',
-			'/js/profile.min.js'
+			'/js/bootstrap.min.js'
 			);
 
 		# Use load_client_files to generate the links from the above array

@@ -29,7 +29,8 @@ class posts_controller extends base_controller {
         # Unix timestamp of when this post was created / modified
         $_POST['created']  = Time::now();
         $_POST['modified'] = Time::now();
-
+		$_POST['content'] = nl2br(htmlentities($_POST['content'],ENT_QUOTES, 'UTF-8'));
+		#var_dump($_POST);
         # Insert
         # Note we didn't have to sanitize any of the $_POST data because we're using the insert method which does it for us
         DB::instance(DB_NAME)->insert('posts', $_POST);
@@ -181,16 +182,17 @@ class posts_controller extends base_controller {
                   
                   # Set the modified time
             $_POST['modified'] = Time::now();
+			$_POST['content'] = nl2br(htmlentities($_POST['content'],ENT_QUOTES, 'UTF-8'));
             
             # Be sure to Associate this post with this user
-        $_POST['user_id'] = $this->user->user_id;
+			$_POST['user_id'] = $this->user->user_id;
          
-                # set up the where conditon and update the post.
-                $where_condition = 'WHERE post_id = '.$id;
-                $updated_post = DB::instance(DB_NAME)->update('posts', $_POST, $where_condition);
+            # set up the where conditon and update the post.
+            $where_condition = 'WHERE post_id = '.$id;
+            $updated_post = DB::instance(DB_NAME)->update('posts', $_POST, $where_condition);
 
-                # Send them back
-               Router::redirect('/users/profile');
+            # Send them back
+            Router::redirect('/users/profile');
     }
 	
 	# +1 functionality end 
