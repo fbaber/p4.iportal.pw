@@ -1,7 +1,6 @@
-
 <form id="form" method='POST' action='/currency/p_add'>
 	<br>
-	<div class="content" style="height:500px">
+	<div class="content" style="height:500px; padding-top: 110px;">
 	<h2>Easy currency converter for major currencies</h2>
 	<br><br>
 	<input type="hidden" name="exchange_value" value="1">
@@ -35,6 +34,5 @@
 	<br><br><br>
 <!--	<button id="button" > Calculate </button> -->
 	<input type="submit" id="button" class="btn btn-primary" value=" Calculate with the current exchange rates ">
-
 </form>
 </div>

@@ -1,5 +1,7 @@
 <?php
-// setting PHP error reporting 
+//This code is not applicable for this P4 project.  
+//setting PHP error reporting 
+
 
     error_reporting(E_ALL); 
 	ini_set('display_errors', 1);

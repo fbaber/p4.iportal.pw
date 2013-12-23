@@ -21,7 +21,6 @@
     <input class="input-large" type='email' name='email' required="required" placeholder="Email address" id="email">
 	<div id="email_msg" style="color:#FF0040;"></div>
     <br><br>
-	
 	<label>Age</label><br>
     <input class="input-large" type='number' name='age' required="required" placeholder="Age 18-99" id="age">
 	<div id="age_msg" style="color:#FF0040;"></div>
@@ -40,7 +39,6 @@
     <input class="input-large" type='password' name='password' required="required" placeholder="Password" id="password">
 	<div id="password_msg" style="color:#FF0040;"></div>
     <br><br>
-	
 	<label>Confirm Password</label><br>
     <input class="password" type='password' required="required" placeholder="Confirm Password" id="cpassword">
 	<div id="cpassword_msg" style="color:#FF0040;"></div>

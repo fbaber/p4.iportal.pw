@@ -4,7 +4,7 @@
 
 <h4>Edit your post:</h4>
         <br>
-        <textarea id='myPost' cols="50" rows="10" type='text' name='content' required><?=nl2br($post['content'])?></textarea>
+        <textarea id='myPost' cols="50" rows="10" type='text' name='content' required><?=strip_tags($post['content'])?></textarea>
 		<br><br>
     <input class="buttons" class="btn btn-primary" type='submit' value='Update Post'>
 </form>

@@ -9,10 +9,10 @@ class currency_controller extends base_controller {
             die("Members only. <a href='/users/login'>Login</a>");
         }
     }
-
+	# Function to exchange the currencies
     public function swap() {
 		
-				# Create an array of 1 or many client files to be included before the closing </body> tag
+		# Create an array of 1 or many client files to be included before the closing </body> tag
 		$client_files_body = Array(
 			'/js/bootstrap.min.js',
 			'/js/login.js'
@@ -71,7 +71,7 @@ class currency_controller extends base_controller {
 			#.'</b>'.' in '. $currency2.' Currency'.'</p>';
 			#echo '<br/>';
 			#echo '<p3>'.'*Note:The Exchange rates are delayed by 20 mins when markets are open.'.'</p3>';
-		$this->template->content = View::instance('v_currency_exchange_result');
+			$this->template->content = View::instance('v_currency_exchange_result');
             $this->template->title = "currency exchange results";
 		
 		# Associate this post with this user
@@ -179,88 +179,5 @@ class currency_controller extends base_controller {
     # Render the view
     echo $this->template;
 	}
-	
-	# Function to follow a users posts
-	
-	public function follow($user_id_followed) {
-
-    # Prepare the data array to be inserted
-    $data = Array(
-        "created" => Time::now(),
-        "user_id" => $this->user->user_id,
-        "user_id_followed" => $user_id_followed
-        );
-
-    # Do the insert
-    DB::instance(DB_NAME)->insert('users_users', $data);
-
-    # Send them back
-    Router::redirect("/posts/users");
-
-	}
-
-	# Function to unfollow a users posts
-	public function unfollow($user_id_followed) {
-
-    # Delete this connection
-    $where_condition = 'WHERE user_id = '.$this->user->user_id.' AND user_id_followed = '.$user_id_followed;
-    DB::instance(DB_NAME)->delete('users_users', $where_condition);
-
-    # Send them back
-    Router::redirect("/posts/users");
-
-	}
-	
-	# Add functionality to edit posts 2ns +1 feature
-	
-	public function edit($edited) {
-            # Set up the View
-            $this->template->content = View::instance('v_posts_edit');
-                    
-            # Build the query to get the post
-            $q = "SELECT *
-         FROM posts
-         WHERE user_id = ".$this->user->user_id. " AND
-         post_id = ".$edited;
-
-            # Execute the query to get all the users.
-            # Store the result array in the variable $post
-            $_POST['editable'] = DB::instance(DB_NAME)->select_row($q);
-            
-            # Pass data to the view
-            $this->template->content->post = $_POST['editable'];
-            
-			# print_r($_POST);
-            # Render template
-                echo $this->template;         
-
-    }
     
-    public function p_edit($id) {
-			
-			
-			#print_r($id);
-			#die();
-            # Prevent SQL injection attacks by sanitizing the data the user entered in the form
-            #    $_POST = DB::instance(DB_NAME)->sanitize($_POST);
-    
-            # Set up the View
-            # Delete 
-			#$this->template->content = View::instance('v2_posts_2_edit');
-                  
-                  # Set the modified time
-            $_POST['modified'] = Time::now();
-            
-            # Be sure to Associate this post with this user
-        $_POST['user_id'] = $this->user->user_id;
-         
-                # set up the where conditon and update the post.
-                $where_condition = 'WHERE post_id = '.$id;
-                $updated_post = DB::instance(DB_NAME)->update('posts', $_POST, $where_condition);
-
-                # Send them back
-               Router::redirect('/users/profile');
-    }
-	
-	# +1 functionality end 
 }
