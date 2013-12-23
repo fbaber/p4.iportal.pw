@@ -1,4 +1,4 @@
-<div class="content" style="height:720px;">
+<div class="content" style="padding-top: 110px; min-height:400px;">
 <form method='POST' action='/users/p_login'class="userform">
 	<br>
 	<h3>Please login to the site:</h3>

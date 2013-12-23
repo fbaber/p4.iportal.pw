@@ -1,5 +1,5 @@
 <?php if($user) router::redirect('/currency/swap');;?>
-<div class="content" style="overflow:auto;">
+<div class="content" style="padding-top: 110px; min-height:400px;">
 <div class="row" style="margin-right: 24px; margin-left: 24px;margin-top: 50px;">
 <div class="col-md-10 col-md-offset-1">
 <h1 class="page-header">Welcome to <?=APP_NAME?><?php if($user) echo ', '.$user->first_name; ?></h1>
